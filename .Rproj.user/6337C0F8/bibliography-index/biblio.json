@@ -1,0 +1,847 @@
+{
+    "sources": [
+        {
+            "author": [
+                {
+                    "family": "WHO"
+                }
+            ],
+            "id": "world2023global",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "publisher": "World Health Organization",
+            "title": "Global status report on road safety 2023: summary",
+            "title-short": "Global status report on road safety 2023",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Ashenfelter",
+                    "given": "Orley"
+                },
+                {
+                    "family": "Greenstone",
+                    "given": "Michael"
+                }
+            ],
+            "container-title": "Journal of Political Economy",
+            "id": "ashenfelter2004using",
+            "issue": "S1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004
+                    ]
+                ]
+            },
+            "page": "S226-S267",
+            "publisher": "The University of Chicago Press",
+            "title": "Using mandated speed limits to measure the value of a statistical life",
+            "type": "article-journal",
+            "volume": "112"
+        },
+        {
+            "author": [
+                {
+                    "family": "Ang",
+                    "given": "Amanda"
+                },
+                {
+                    "family": "Christensen",
+                    "given": "Peter"
+                },
+                {
+                    "family": "Vieira",
+                    "given": "Renato"
+                }
+            ],
+            "container-title": "Journal of Public Economics",
+            "id": "ang2020should",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "page": "104155",
+            "publisher": "Elsevier",
+            "title": "Should congested cities reduce their speed limits? Evidence from são paulo, brazil",
+            "type": "article-journal",
+            "volume": "184"
+        },
+        {
+            "author": [
+                {
+                    "family": "Campos",
+                    "given": "Valdir Ribeiro"
+                },
+                {
+                    "dropping-particle": "e",
+                    "family": "Silva",
+                    "given": "Rebeca de Souza"
+                },
+                {
+                    "family": "Duailibi",
+                    "given": "Sérgio"
+                },
+                {
+                    "dropping-particle": "dos",
+                    "family": "Santos",
+                    "given": "José Florentino"
+                },
+                {
+                    "family": "Laranjeira",
+                    "given": "Ronaldo"
+                },
+                {
+                    "family": "Pinsky",
+                    "given": "Ilana"
+                }
+            ],
+            "container-title": "Accident Analysis & Prevention",
+            "id": "campos2013effect",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "page": "622-627",
+            "publisher": "Elsevier",
+            "title": "The effect of the new traffic law on drinking and driving in são paulo, brazil",
+            "type": "article-journal",
+            "volume": "50"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bauernschuster",
+                    "given": "Stefan"
+                },
+                {
+                    "family": "Rekers",
+                    "given": "Ramona"
+                }
+            ],
+            "container-title": "Journal of Public Economics",
+            "id": "bauernschuster2022speed",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "page": "104663",
+            "publisher": "Elsevier",
+            "title": "Speed limit enforcement and road safety",
+            "type": "article-journal",
+            "volume": "210"
+        },
+        {
+            "author": [
+                {
+                    "family": "Campos",
+                    "given": "Valdir Ribeiro"
+                },
+                {
+                    "dropping-particle": "e",
+                    "family": "Silva",
+                    "given": "Rebeca de Souza"
+                },
+                {
+                    "family": "Duailibi",
+                    "given": "Sérgio"
+                },
+                {
+                    "dropping-particle": "dos",
+                    "family": "Santos",
+                    "given": "José Florentino"
+                },
+                {
+                    "family": "Laranjeira",
+                    "given": "Ronaldo"
+                },
+                {
+                    "family": "Pinsky",
+                    "given": "Ilana"
+                }
+            ],
+            "container-title": "Accident Analysis & Prevention",
+            "id": "campos2013effect",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "page": "622-627",
+            "publisher": "Elsevier",
+            "title": "The effect of the new traffic law on drinking and driving in são paulo, brazil",
+            "type": "article-journal",
+            "volume": "50"
+        },
+        {
+            "author": [
+                {
+                    "family": "Alves",
+                    "given": "Pedro Jorge"
+                },
+                {
+                    "family": "Emanuel",
+                    "given": "Lucas"
+                },
+                {
+                    "family": "Pereira",
+                    "given": "Rafael HM"
+                }
+            ],
+            "container-title": "SocArXiv, July",
+            "id": "alves2020causal",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "title": "The causal effect of road concessions on road safety",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "author": [
+                {
+                    "family": "Ashenfelter",
+                    "given": "Orley"
+                },
+                {
+                    "family": "Greenstone",
+                    "given": "Michael"
+                }
+            ],
+            "container-title": "Journal of Political Economy",
+            "id": "ashenfelter2004using",
+            "issue": "S1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004
+                    ]
+                ]
+            },
+            "page": "S226-S267",
+            "publisher": "The University of Chicago Press",
+            "title": "Using mandated speed limits to measure the value of a statistical life",
+            "type": "article-journal",
+            "volume": "112"
+        },
+        {
+            "author": [
+                {
+                    "family": "Ang",
+                    "given": "Amanda"
+                },
+                {
+                    "family": "Christensen",
+                    "given": "Peter"
+                },
+                {
+                    "family": "Vieira",
+                    "given": "Renato"
+                }
+            ],
+            "container-title": "Journal of Public Economics",
+            "id": "ang2020should",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "page": "104155",
+            "publisher": "Elsevier",
+            "title": "Should congested cities reduce their speed limits? Evidence from são paulo, brazil",
+            "type": "article-journal",
+            "volume": "184"
+        },
+        {
+            "author": [
+                {
+                    "family": "WHO"
+                }
+            ],
+            "id": "world2023global",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "publisher": "World Health Organization",
+            "title": "Global status report on road safety 2023: summary",
+            "title-short": "Global status report on road safety 2023",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "IBGE"
+                }
+            ],
+            "container-title": "Instituto Brasileiro de Geografia e Estatística",
+            "id": "ibgecidades2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "publisher": "Available on: https://cidades.ibge.gov.br/brasil/pesquisa/22/28120?ano=2015",
+            "title": "IBGE Cidades",
+            "type": ""
+        },
+        {
+            "DOI": "10.1086/259394",
+            "ISSN": "0022-3808",
+            "URL": "https://www.journals.uchicago.edu/doi/10.1086/259394",
+            "author": [
+                {
+                    "family": "Becker",
+                    "given": "Gary S."
+                }
+            ],
+            "container-title": "Journal of Political Economy",
+            "id": "Becker1968",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1968,
+                        3
+                    ]
+                ]
+            },
+            "page": "169-217",
+            "title": "Crime and Punishment: An Economic Approach",
+            "type": "article-journal",
+            "volume": "76"
+        },
+        {
+            "author": [
+                {
+                    "family": "Sun",
+                    "given": "Liyang"
+                },
+                {
+                    "family": "Abraham",
+                    "given": "Sarah"
+                }
+            ],
+            "container-title": "Journal of Econometrics",
+            "id": "sun2021estimating",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "175-199",
+            "publisher": "Elsevier",
+            "title": "Estimating dynamic treatment effects in event studies with heterogeneous treatment effects",
+            "type": "article-journal",
+            "volume": "225"
+        },
+        {
+            "DOI": "http://dx.doi.org/10.2139/ssrn.2826228",
+            "URL": "https://ssrn.com/abstract=2826228",
+            "author": [
+                {
+                    "family": "Borusyak",
+                    "given": "Kirill"
+                },
+                {
+                    "family": "Jaravel",
+                    "given": "Xavier"
+                },
+                {
+                    "family": "Spiess",
+                    "given": "Jann"
+                }
+            ],
+            "genre": "{Working Paper}",
+            "id": "borusyak2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "publisher": "SSRN",
+            "title": "Revisiting Event Study Designs, with an Application to the Estimation of the Marginal Propensity to Consume",
+            "type": "report"
+        },
+        {
+            "author": [
+                {
+                    "family": "Britto",
+                    "given": "Diogo GC"
+                },
+                {
+                    "family": "Pinotti",
+                    "given": "Paolo"
+                },
+                {
+                    "family": "Sampaio",
+                    "given": "Breno"
+                }
+            ],
+            "container-title": "Econometrica",
+            "id": "britto2022effect",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "page": "1393-1423",
+            "publisher": "Wiley Online Library",
+            "title": "The effect of job loss and unemployment insurance on crime in brazil",
+            "type": "article-journal",
+            "volume": "90"
+        },
+        {
+            "author": [
+                {
+                    "family": "Goodman-Bacon",
+                    "given": "Andrew"
+                }
+            ],
+            "container-title": "Journal of Econometrics",
+            "id": "goodman21",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "254-277",
+            "publisher": "Elsevier",
+            "title": "Difference-in-differences with variation in treatment timing",
+            "type": "article-journal",
+            "volume": "225"
+        },
+        {
+            "DOI": "10.1257/aer.20181169",
+            "URL": "https://www.aeaweb.org/articles?id=10.1257/aer.20181169",
+            "author": [
+                {
+                    "dropping-particle": "de",
+                    "family": "Chaisemartin",
+                    "given": "Clément"
+                },
+                {
+                    "family": "D’Haultfœuille",
+                    "given": "Xavier"
+                }
+            ],
+            "container-title": "American Economic Review",
+            "id": "chaisemartin19",
+            "issue": "9",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "page": "2964-96",
+            "title": "Two-Way Fixed Effects Estimators with Heterogeneous Treatment Effects",
+            "type": "article-journal",
+            "volume": "110"
+        },
+        {
+            "author": [
+                {
+                    "family": "Organization",
+                    "given": "World Health"
+                }
+            ],
+            "id": "world2023global",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "publisher": "World Health Organization",
+            "title": "Global status report on road safety 2023: summary",
+            "title-short": "Global status report on road safety 2023",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Wijnen",
+                    "given": "Wim"
+                },
+                {
+                    "family": "Stipdonk",
+                    "given": "Henk"
+                }
+            ],
+            "container-title": "Accident Analysis & Prevention",
+            "id": "wijnen2016social",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "page": "97-106",
+            "publisher": "Elsevier",
+            "title": "Social costs of road crashes: An international analysis",
+            "title-short": "Social costs of road crashes",
+            "type": "article-journal",
+            "volume": "94"
+        },
+        {
+            "author": [
+                {
+                    "family": "Vecino-Ortiz",
+                    "given": "Andres I"
+                },
+                {
+                    "family": "Nagarajan",
+                    "given": "Madhuram"
+                },
+                {
+                    "family": "Elaraby",
+                    "given": "Sarah"
+                },
+                {
+                    "family": "Guzman-Tordecilla",
+                    "given": "Deivis Nicolas"
+                },
+                {
+                    "family": "Paichadze",
+                    "given": "Nino"
+                },
+                {
+                    "family": "Hyder",
+                    "given": "Adnan A"
+                }
+            ],
+            "container-title": "The Lancet",
+            "id": "vecino2022saving",
+            "issue": "10347",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "page": "237-250",
+            "publisher": "Elsevier",
+            "title": "Saving lives through road safety risk factor interventions: Global and national estimates",
+            "title-short": "Saving lives through road safety risk factor interventions",
+            "type": "article-journal",
+            "volume": "400"
+        },
+        {
+            "author": [
+                {
+                    "family": "Datta",
+                    "given": "Saugato"
+                }
+            ],
+            "container-title": "Journal of Development Economics",
+            "id": "datta2012impact",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "page": "46-57",
+            "publisher": "Elsevier",
+            "title": "The impact of improved highways on indian firms",
+            "type": "article-journal",
+            "volume": "99"
+        },
+        {
+            "author": [
+                {
+                    "family": "Minten",
+                    "given": "Bart"
+                },
+                {
+                    "family": "Kyle",
+                    "given": "Steven"
+                }
+            ],
+            "container-title": "Journal of Development Economics",
+            "id": "minten1999effect",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1999
+                    ]
+                ]
+            },
+            "page": "467-495",
+            "publisher": "Elsevier",
+            "title": "The effect of distance and road quality on food collection, marketing margins, and traders’ wages: Evidence from the former zaire",
+            "title-short": "The effect of distance and road quality on food collection, marketing margins, and traders’ wages",
+            "type": "article-journal",
+            "volume": "60"
+        },
+        {
+            "author": [
+                {
+                    "family": "Francisco",
+                    "given": "Kris A"
+                },
+                {
+                    "family": "Tanaka",
+                    "given": "Makoto"
+                }
+            ],
+            "container-title": "Economics of Education Review",
+            "id": "francisco2019does",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "101927",
+            "publisher": "Elsevier",
+            "title": "Does public infrastructure affect human capital? The effect of improved transport connectivity on children’s education in the philippines",
+            "type": "article-journal",
+            "volume": "73"
+        },
+        {
+            "author": [
+                {
+                    "family": "Tang",
+                    "given": "Cheng Keat"
+                }
+            ],
+            "container-title": "CEP Working Paper",
+            "id": "tang2017speed",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "title": "Do speed cameras save lives?",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Gallagher",
+                    "given": "Justin"
+                },
+                {
+                    "family": "Fisher",
+                    "given": "Paul J"
+                }
+            ],
+            "container-title": "American Economic Journal: Economic Policy",
+            "id": "gallagher2020criminal",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "page": "202-237",
+            "publisher": "American Economic Association 2014 Broadway, Suite 305, Nashville, TN 37203-2425",
+            "title": "Criminal deterrence when there are offsetting risks: Traffic cameras, vehicular accidents, and public safety",
+            "title-short": "Criminal deterrence when there are offsetting risks",
+            "type": "article-journal",
+            "volume": "12"
+        },
+        {
+            "author": [
+                {
+                    "family": "Dušek",
+                    "given": "Libor"
+                },
+                {
+                    "family": "Traxler",
+                    "given": "Christian"
+                }
+            ],
+            "container-title": "Journal of the European Economic Association",
+            "id": "duvsek2022learning",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "page": "739-777",
+            "publisher": "Oxford University Press",
+            "title": "Learning from law enforcement",
+            "type": "article-journal",
+            "volume": "20"
+        },
+        {
+            "author": [
+                {
+                    "family": "Karimpour",
+                    "given": "Abolfazl"
+                },
+                {
+                    "family": "Kluger",
+                    "given": "Robert"
+                },
+                {
+                    "family": "Liu",
+                    "given": "Chenhui"
+                },
+                {
+                    "family": "Wu",
+                    "given": "Yao-Jan"
+                }
+            ],
+            "container-title": "Transportation research part F: traffic psychology and behaviour",
+            "id": "karimpour2021effects",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "55-72",
+            "publisher": "Elsevier",
+            "title": "Effects of speed feedback signs and law enforcement on driver speed",
+            "type": "article-journal",
+            "volume": "77"
+        },
+        {
+            "author": [
+                {
+                    "family": "Oviedo-Trespalacios",
+                    "given": "Oscar"
+                },
+                {
+                    "family": "Truelove",
+                    "given": "Verity"
+                },
+                {
+                    "family": "Watson",
+                    "given": "Barry"
+                },
+                {
+                    "family": "Hinton",
+                    "given": "Jane A"
+                }
+            ],
+            "container-title": "Transportation research part A: policy and practice",
+            "id": "oviedo2019impact",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "85-98",
+            "publisher": "Elsevier",
+            "title": "The impact of road advertising signs on driver behaviour and implications for road safety: A critical systematic review",
+            "title-short": "The impact of road advertising signs on driver behaviour and implications for road safety",
+            "type": "article-journal",
+            "volume": "122"
+        },
+        {
+            "author": [
+                {
+                    "family": "Carnis",
+                    "given": "Laurent"
+                },
+                {
+                    "family": "Blais",
+                    "given": "Etienne"
+                }
+            ],
+            "container-title": "Accident Analysis & Prevention",
+            "id": "carnis2013assessment",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "page": "301-309",
+            "publisher": "Elsevier",
+            "title": "An assessment of the safety effects of the french speed camera program",
+            "type": "article-journal",
+            "volume": "51"
+        },
+        {
+            "DOI": "10.1016/j.jeconom.2021.03.014",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0304407621001445",
+            "author": [
+                {
+                    "family": "Goodman-Bacon",
+                    "given": "Andrew"
+                }
+            ],
+            "container-title": "Journal of Econometrics",
+            "id": "goodman-bacon2021",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        12
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "254-277",
+            "title": "Difference-in-differences with variation in treatment timing",
+            "type": "article-journal",
+            "volume": "225"
+        }
+    ],
+    "project_biblios": []
+}

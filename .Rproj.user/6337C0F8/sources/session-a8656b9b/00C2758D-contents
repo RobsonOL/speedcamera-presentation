@@ -1,0 +1,354 @@
+---
+title: "Limiting Speed Improves Highway Safety"
+subtitle: "Evidence from Brazil"
+format: clean-revealjs
+css: style.css
+editor: visual
+author:
+  - name: "Robson Lima"
+    id: rl
+    orcid: 0000-0001-6310-0023
+    affiliations: IFPB
+    email: robson.lima@ifpb.edu.br
+  - name: "Antonio V. Barbosa"
+    id: av
+    affiliations: UFPB
+    orcid: 0000-0002-3211-4235
+    email: antoniobarbosa@ccsa.ufpb.br
+  - name: "Giuseppe Trevisan"
+    orcid: 0000-0001-5165-0597
+    id: gt
+    affiliations: UFPE
+    email: giuseppe.trevisan@ufpe.br
+  - name: "Aléssio Almeida"
+    orcid: 0000-0003-0436-359X
+    id: aa
+    affiliations: UFPB
+    email: alessio.almeida@academico.ufpb.br
+  - name: "Hilton Martins Ramalho"
+    id: hr
+    affiliations: UFPB
+    orcid: 0000-0003-1501-8652
+    email: hilton.ramalho@academico.ufpb.br
+bibliography: references.bib
+---
+
+## Introduction
+
+-   **Road traffic accidents are the top cause of non-natural** deaths for children and young adults, with around 1.2 million deaths annually [@world2023global].
+
+-   Low and middle-income countries account for 92% fo the world's traffic fatalities [@vecino2022saving]
+
+-   The average estimated socioeconomic cost of traffic accidents amounts to nearly 2.5% of a country’s GDP. [@wijnen2016social]
+
+## Institutional Background
+
+-   **Brazil ranks third in traffic accident deaths worldwide [@world2023global].**
+
+-   In 2021, Brazil reported 31,468 road fatalities, an estimated rate of 15.7 per 100,000 people.
+
+-   Main risk factors related to traffic accidents:
+
+    -   Exceeding the speed limits
+    -   Drivers’ lack of attention and
+    -   Alcohol consumption
+
+## Institutional Background
+
+-   **In recent years, various traffic policies have been implemented to reduce fatalities:**
+    -   Lower speed limits [@ashenfelter2004using; @ang2020should]
+    -   Reduced legal blood alcohol limits [@campos2013effect]
+    -   Media campaigns [@bauernschuster2022speed] and
+    -   Road concessions to the private sector [@alves2020causal]
+
+## Institutional Background {.smaller}
+
+### National Speed Control Plan (PNCV)
+
+::::: columns
+::: {.column width="50%"}
+![**Figure 1:** Spatial Distribution of Speed Cameras in Brazilian Highways](images/cam_map.png)
+:::
+
+::: {.column width="50%"}
+To reduce highway fatalities, DNIT implemented the **National Speed Control Plan (PNCV)** in 2011, installing and maintaining speed enforcement cameras (Figure 1) on federal highways.
+:::
+:::::
+
+## Data
+
+### Main data sources
+
+::::: columns
+::: {.column width="50%"}
+**Traffic accidents:** publicly avaliable data from the Brazilian Federal Highway Police.
+
+-   **Occurence-level data**: informations about location, date, time, weather conditions, and the number of vehicles and victims involved.
+-   **Personal-level data**: informations on age, gender, and the victim's condition related to injury severity.
+:::
+
+::: {.column width="50%"}
+**Traffic cameras:** provided by the National Department of Transport and Infraestructure (DNIT)
+
+-   Contains **4,599 camera sites installed on federal highways** (including exact georeferenced information).
+
+-   **Provides details on installations dates**, speed limits, and equipment type.
+:::
+:::::
+
+## Data {.smaller}
+
+### Descriptive Statistics
+
+::::: columns
+::: {.column width="50%"}
+![](content/table1.jpg){fig-align="center" width="80%"}
+:::
+
+::: {.column width="50%"}
+Combining theses data allows us to construct a **balanced panel in which we count the number of traffic accidents and victims around a radius** $c$ **around installed cameras.**
+
+-   **Controls on municipality level:** population and vehicles fleet (provided by Departamento Nacional de Trânsito)
+
+-   Quarterly data from 2010Q1 to 2018Q4
+
+-   **2010Q1 start:** As PNCV started in 2011, using 2010 as a start point ensures we always have a pre-treatment period.
+
+-   **2018Q4 end:** Most of the traffic cameras in Brazil were deactivated due operation contract expiration by January 2019.
+:::
+:::::
+
+## Empirical Strategy
+
+### Identification Strategy
+
+-   **Natural experiment:** staggered roll-out of camera installations and precise accident data near traffic cameras.
+
+-   We avoid using the canonical Two-Way Fixed Effects (TWFE) due to bias arising from presence of treatment effect heterogeneity and differential timing [@sun2021estimating; @goodman-bacon2021]
+
+## Empirical Strategy
+
+### Goodman-Bacon Decomposition
+
+::::: columns
+::: {.column width="50%"}
+![**Figure 2:** Goodman-Bacon Decomposition](content/figure2.jpg)
+:::
+
+::: {.column width="50%"}
+**Estimated coefficients obtained from the canonical TWFE are likely to be biased.**
+
+-   Figure 2 shows the variance-based weights derived from @goodman-bacon2021.
+
+-   The graph shows that when units treated in future (past) quarters mimic the control group, most of weights are negative (positive).
+:::
+:::::
+
+## Empirical Strategy
+
+### Cohort-Specific Treatment Effects on the Treated (CATT)
+
+-   To overcome these pitfalls we implement the estimator proposed by @sun2021estimating.
+
+-   Under the assumptions of parallel trends and no anticipation effects, we estimate a semi-dynamic event study specification:
+
+$$
+y_{it} = \sum_{d \in \mathbb{Z}_+} \beta_{d} \mathbb{1} \{ D_{it} = d \} + \delta_i + \eta_{t} + X_{it}^{'}\alpha + u_{it},
+$$
+
+## Results {.smaller}
+
+### Impact of Speed Cameras on Highway Accidents
+
+::::: columns
+::: {.column width="50%"}
+![](content/table2.jpg){fig-align="center" width="80%"}
+:::
+
+::: {.column width="50%"}
+-   **Reduction of approximately 5% in the total number of accidents** following the onset of speed cameras.
+
+-   **This represents 10,356 fewer accidents** in the post-treatment period.
+
+-   The effect size is economically relevant given the extension of the highway network and the sample restriction (only around speed cameras).
+:::
+:::::
+
+## Results {.smaller}
+
+### Impact of Speed Cameras on Highway Accidents
+
+::::: columns
+::: {.column width="50%"}
+![**Figure 3:** Dynamic Effects of Speed Cameras](content/figure3.jpg){fig-align="center" width="70%"}
+:::
+
+::: {.column width="50%"}
+-   **Panel A**: Outcomes of treated and control units follow a similar path before the treatment.
+
+-   **Panel B**: The choice of the quarter immediately before onset of cameras does not threat non-anticipation effects assumption.
+:::
+:::::
+
+## Results {.smaller}
+
+### Borusyak et al (2021)'s DiD Estimator
+
+::::: columns
+::: {.column width="50%"}
+![**Figure 4:** DID Imputation Estimation for the Effect of Speed Cameras on Total Accidents](content/figure4.jpg){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+**Figure 4 shows the estimated effect of speed cameras on total accidents using the imputation estimator proposed by @borusyak2021.**
+
+-   Results are similar to CATT estimates.
+
+-   Taken together, these findings suggest that the estimated effects are free from parallel trends violation.
+:::
+:::::
+
+## Results {.smaller}
+
+### Impact on Injuries and Fatal Victims
+
+::::: columns
+::: {.column width="50%"}
+![](content/table3.jpg){fig-align="center" width="100%"}
+:::
+
+::: {.column width="50%"}
+-   Our findings suggests that lowering speed in sites within highways significantly reduces injuries and deaths.
+
+-   **Column (1):** Speed cameras seem to reduce the number of total victims by 7%.
+
+-   **Columns (3), (5), and (7):** On average, injuries fall by 5.4%; severe injuries by 2.7%; and deaths by 0.9%.
+
+-   **These findings underscore that the benefits of the policy extend beyond merely reducing the number of collisions.**
+:::
+:::::
+
+## Results {.smaller}
+
+### Robustness Check: Alternate Radii
+
+::::: columns
+::: {.column width="50%"}
+![](content/table4.jpg){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+-   **We now test the sensitivity of our estimates by varying the radius size used to count collisions around the cameras.**
+
+-   Results are robust to different radii.
+
+-   **Our results suggest that the effect of speed monitoring at particular sites spill over**, enhancing highway safety even at considerable distances.
+:::
+:::::
+
+## Results {.smaller}
+
+### Robustness Check: Alternate Controls
+
+::::: columns
+::: {.column width="50%"}
+![](content/table5.jpg){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+-   **We test the robustness of our estimates by experimenting alternate specifications.**
+
+-   One concern is that cameras might respond to other unobserved shocks at the state level that varies over time.
+
+-   We include interactions between state fixed effects with calendar quarters.
+
+-   **Our results are robust to this alternative specification.**
+:::
+:::::
+
+## Results {.smaller}
+
+### Robustness Check: Leave-One-Out Test
+
+::::: columns
+::: {.column width="50%"}
+![**Figure 6:** Leave-One-Out Tests](content/figure6.jpg){width="100%"}
+:::
+
+::: {.column width="50%"}
+-   **We conduct leave-out tests** by removing specific states and road segments from our sample.
+
+-   This exercise aims to assess the impact of locations with varying levels of car traffic intensity.
+
+-   **This exercise does not significantly alter the magnitude of our baseline estimates.**
+:::
+:::::
+
+## Results {.smaller}
+
+### Robustness Check: Removing Bottom 20% and Top 80%
+
+::::: columns
+::: {.column width="50%"}
+![**Figure 7:** Dynamic Effects of Speed Cameras After Removing Bottom 20% and Top 80% Accident Segments](content/figure7.jpg){width="1000"}
+:::
+
+::: {.column width="50%"}
+-   We aim to assess **how the presence of more or less dangerous highway sites might influence** our main results
+
+-   We exclude all highway segments falling within the bottom 20% and the top 80% of the pre-camera accident distribution.
+
+-   **Our main findings remain consistent with the baseline results.**
+:::
+:::::
+
+## Results {.smaller}
+
+### Effects by Contextual Characteristics
+
+::::: columns
+::: {.column width="50%"}
+![](content/table6.jpg){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+-   **Columns (1) and (2):** Speed cameras seem to be more effective in curbing accidents on single-lane roads. Single-lane roads are typically more perilous and require heightened driver vigilance.
+
+-   **Columns (3) and (4):** The effect of speed cameras is similar between straight roads and curved roads.
+
+-   **Column (5) and (6):** Accidents reductions are similarly effective across different camera technologies (REV and CEV).
+:::
+:::::
+
+## Results {.smaller}
+
+### Effects by Contextual Characteristics
+
+::::: columns
+::: {.column width="50%"}
+![](content/table7.jpg){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+-   **Columns (1) and (2):** Cameras seem more effective in reducing accidents during daytime hours. Cameras may have different effectiveness depending on visibility conditions, traffic volume, and driver behavior.
+
+-   **Columns (3) and (4):** Our results suggests that speed cameras are especially effective at reducing accidents during weekends.
+:::
+:::::
+
+## Conclusion {.smaller}
+
+-   Evidence of traffic policies to improve road safety are still limited.
+
+-   We use granular data on highway accidents and leverages a traffic monitoring policy to evaluate the impacts of these road safety measures.
+
+-   Our findings reveal that the **traffic monitoring policy effectively reduces the total number of accidents**, injuries, and fatalities around speed cameras.
+
+-   Furthermore, the **cameras are effective in preventing accidents across different road conditions and camera technologies.**
+
+-   The **benefits of camera installation extend to surrounding areas**, indicating that speed cameras may have a broader impact on overall road safety.
+
+## References
+
+::: {#refs}
+:::
