@@ -1,0 +1,149 @@
+[
+  {
+    "objectID": "limiting_speed_improves_safety.html#introduction",
+    "href": "limiting_speed_improves_safety.html#introduction",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Introduction",
+    "text": "Introduction\n\nRoad traffic accidents are the top cause of non-natural deaths for children and young adults, with around 1.2 million deaths annually (Organization 2023).\nLow and middle-income countries account for 92% fo the world’s traffic fatalities (Vecino-Ortiz et al. 2022)\nThe average estimated socioeconomic cost of traffic accidents amounts to nearly 2.5% of a country’s GDP. (Wijnen and Stipdonk 2016)"
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#institutional-background",
+    "href": "limiting_speed_improves_safety.html#institutional-background",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Institutional Background",
+    "text": "Institutional Background\n\nBrazil ranks third in traffic accident deaths worldwide (Organization 2023).\nIn 2021, Brazil reported 31,468 road fatalities, an estimated rate of 15.7 per 100,000 people.\nMain risk factors related to traffic accidents:\n\nExceeding the speed limits\nDrivers’ lack of attention and\nAlcohol consumption"
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#institutional-background-1",
+    "href": "limiting_speed_improves_safety.html#institutional-background-1",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Institutional Background",
+    "text": "Institutional Background\n\nIn recent years, various traffic policies have been implemented to reduce fatalities:\n\nLower speed limits (Ashenfelter and Greenstone 2004; Ang, Christensen, and Vieira 2020)\nReduced legal blood alcohol limits (Campos et al. 2013)\nMedia campaigns (Bauernschuster and Rekers 2022) and\nRoad concessions to the private sector (Alves, Emanuel, and Pereira 2020)"
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#institutional-background-2",
+    "href": "limiting_speed_improves_safety.html#institutional-background-2",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Institutional Background",
+    "text": "Institutional Background\nNational Speed Control Plan (PNCV)\n\n\n\n\n\nFigure 1: Spatial Distribution of Speed Cameras in Brazilian Highways\n\n\n\nTo reduce highway fatalities, DNIT implemented the National Speed Control Plan (PNCV) in 2011, installing and maintaining speed enforcement cameras (Figure 1) on federal highways."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#data",
+    "href": "limiting_speed_improves_safety.html#data",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Data",
+    "text": "Data\nMain data sources\n\n\nTraffic accidents: publicly avaliable data from the Brazilian Federal Highway Police.\n\nOccurence-level data: informations about location, date, time, weather conditions, and the number of vehicles and victims involved.\nPersonal-level data: informations on age, gender, and the victim’s condition related to injury severity.\n\n\nTraffic cameras: provided by the National Department of Transport and Infraestructure (DNIT)\n\nContains 4,599 camera sites installed on federal highways (including exact georeferenced information).\nProvides details on installations dates, speed limits, and equipment type."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#data-1",
+    "href": "limiting_speed_improves_safety.html#data-1",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Data",
+    "text": "Data\nDescriptive Statistics\n\n\n\n\n\n\n\n\nCombining theses data allows us to construct a balanced panel in which we count the number of traffic accidents and victims around a radius \\(c\\) around installed cameras.\n\nControls on municipality level: population and vehicles fleet (provided by Departamento Nacional de Trânsito)\nQuarterly data from 2010Q1 to 2018Q4\n2010Q1 start: As PNCV started in 2011, using 2010 as a start point ensures we always have a pre-treatment period.\n2018Q4 end: Most of the traffic cameras in Brazil were deactivated due operation contract expiration by January 2019."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#empirical-strategy",
+    "href": "limiting_speed_improves_safety.html#empirical-strategy",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Empirical Strategy",
+    "text": "Empirical Strategy\nIdentification Strategy\n\nNatural experiment: staggered roll-out of camera installations and precise accident data near traffic cameras.\nWe avoid using the canonical Two-Way Fixed Effects (TWFE) due to bias arising from presence of treatment effect heterogeneity and differential timing (Sun and Abraham 2021; Goodman-Bacon 2021)"
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#empirical-strategy-1",
+    "href": "limiting_speed_improves_safety.html#empirical-strategy-1",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Empirical Strategy",
+    "text": "Empirical Strategy\nGoodman-Bacon Decomposition\n\n\n\n\n\nFigure 2: Goodman-Bacon Decomposition\n\n\n\nEstimated coefficients obtained from the canonical TWFE are likely to be biased.\n\nFigure 2 shows the variance-based weights derived from Goodman-Bacon (2021).\nThe graph shows that when units treated in future (past) quarters mimic the control group, most of weights are negative (positive)."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#empirical-strategy-2",
+    "href": "limiting_speed_improves_safety.html#empirical-strategy-2",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Empirical Strategy",
+    "text": "Empirical Strategy\nCohort-Specific Treatment Effects on the Treated (CATT)\n\nTo overcome these pitfalls we implement the estimator proposed by Sun and Abraham (2021).\nUnder the assumptions of parallel trends and no anticipation effects, we estimate a semi-dynamic event study specification:\n\n\\[\ny_{it} = \\sum_{d \\in \\mathbb{Z}_+} \\beta_{d} \\mathbb{1} \\{ D_{it} = d \\} + \\delta_i + \\eta_{t} + X_{it}^{'}\\alpha + u_{it},\n\\]"
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#results",
+    "href": "limiting_speed_improves_safety.html#results",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Results",
+    "text": "Results\nImpact of Speed Cameras on Highway Accidents\n\n\n\n\n\n\n\n\n\nReduction of approximately 5% in the total number of accidents following the onset of speed cameras.\nThis represents 10,356 fewer accidents in the post-treatment period.\nThe effect size is economically relevant given the extension of the highway network and the sample restriction (only around speed cameras)."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#results-1",
+    "href": "limiting_speed_improves_safety.html#results-1",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Results",
+    "text": "Results\nImpact of Speed Cameras on Highway Accidents\n\n\n\n\n\nFigure 3: Dynamic Effects of Speed Cameras\n\n\n\n\nPanel A: Outcomes of treated and control units follow a similar path before the treatment.\nPanel B: The choice of the quarter immediately before onset of cameras does not threat non-anticipation effects assumption."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#results-2",
+    "href": "limiting_speed_improves_safety.html#results-2",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Results",
+    "text": "Results\nBorusyak et al (2021)’s DiD Estimator\n\n\n\n\n\nFigure 4: DID Imputation Estimation for the Effect of Speed Cameras on Total Accidents\n\n\n\nFigure 4 shows the estimated effect of speed cameras on total accidents using the imputation estimator proposed by Borusyak, Jaravel, and Spiess (2021).\n\nResults are similar to CATT estimates.\nTaken together, these findings suggest that the estimated effects are free from parallel trends violation."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#results-3",
+    "href": "limiting_speed_improves_safety.html#results-3",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Results",
+    "text": "Results\nImpact on Injuries and Fatal Victims\n\n\n\n\n\n\n\n\n\nOur findings suggests that lowering speed in sites within highways significantly reduces injuries and deaths.\nColumn (1): Speed cameras seem to reduce the number of total victims by 7%.\nColumns (3), (5), and (7): On average, injuries fall by 5.4%; severe injuries by 2.7%; and deaths by 0.9%.\nThese findings underscore that the benefits of the policy extend beyond merely reducing the number of collisions."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#results-4",
+    "href": "limiting_speed_improves_safety.html#results-4",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Results",
+    "text": "Results\nRobustness Check: Alternate Radii\n\n\n\n\n\n\n\n\n\nWe now test the sensitivity of our estimates by varying the radius size used to count collisions around the cameras.\nResults are robust to different radii.\nOur results suggest that the effect of speed monitoring at particular sites spill over, enhancing highway safety even at considerable distances."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#results-5",
+    "href": "limiting_speed_improves_safety.html#results-5",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Results",
+    "text": "Results\nRobustness Check: Alternate Controls\n\n\n\n\n\n\n\n\n\nWe test the robustness of our estimates by experimenting alternate specifications.\nOne concern is that cameras might respond to other unobserved shocks at the state level that varies over time.\nWe include interactions between state fixed effects with calendar quarters.\nOur results are robust to this alternative specification."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#results-6",
+    "href": "limiting_speed_improves_safety.html#results-6",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Results",
+    "text": "Results\nRobustness Check: Leave-One-Out Test\n\n\n\n\n\nFigure 6: Leave-One-Out Tests\n\n\n\n\nWe conduct leave-out tests by removing specific states and road segments from our sample.\nThis exercise aims to assess the impact of locations with varying levels of car traffic intensity.\nThis exercise does not significantly alter the magnitude of our baseline estimates."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#results-7",
+    "href": "limiting_speed_improves_safety.html#results-7",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Results",
+    "text": "Results\nRobustness Check: Removing Bottom 20% and Top 80%\n\n\n\n\n\nFigure 7: Dynamic Effects of Speed Cameras After Removing Bottom 20% and Top 80% Accident Segments\n\n\n\n\nWe aim to assess how the presence of more or less dangerous highway sites might influence our main results\nWe exclude all highway segments falling within the bottom 20% and the top 80% of the pre-camera accident distribution.\nOur main findings remain consistent with the baseline results."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#results-8",
+    "href": "limiting_speed_improves_safety.html#results-8",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Results",
+    "text": "Results\nEffects by Contextual Characteristics\n\n\n\n\n\n\n\n\n\nColumns (1) and (2): Speed cameras seem to be more effective in curbing accidents on single-lane roads. Single-lane roads are typically more perilous and require heightened driver vigilance.\nColumns (3) and (4): The effect of speed cameras is similar between straight roads and curved roads.\nColumn (5) and (6): Accidents reductions are similarly effective across different camera technologies (REV and CEV)."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#results-9",
+    "href": "limiting_speed_improves_safety.html#results-9",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Results",
+    "text": "Results\nEffects by Contextual Characteristics\n\n\n\n\n\n\n\n\n\nColumns (1) and (2): Cameras seem more effective in reducing accidents during daytime hours. Cameras may have different effectiveness depending on visibility conditions, traffic volume, and driver behavior.\nColumns (3) and (4): Our results suggests that speed cameras are especially effective at reducing accidents during weekends."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#conclusion",
+    "href": "limiting_speed_improves_safety.html#conclusion",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nEvidence of traffic policies to improve road safety are still limited.\nWe use granular data on highway accidents and leverages a traffic monitoring policy to evaluate the impacts of these road safety measures.\nOur findings reveal that the traffic monitoring policy effectively reduces the total number of accidents, injuries, and fatalities around speed cameras.\nFurthermore, the cameras are effective in preventing accidents across different road conditions and camera technologies.\nThe benefits of camera installation extend to surrounding areas, indicating that speed cameras may have a broader impact on overall road safety."
+  },
+  {
+    "objectID": "limiting_speed_improves_safety.html#references",
+    "href": "limiting_speed_improves_safety.html#references",
+    "title": "Limiting Speed Improves Highway Safety",
+    "section": "References",
+    "text": "References\n\n\nAlves, Pedro Jorge, Lucas Emanuel, and Rafael HM Pereira. 2020. “The Causal Effect of Road Concessions on Road Safety.” SocArXiv, July 15.\n\n\nAng, Amanda, Peter Christensen, and Renato Vieira. 2020. “Should Congested Cities Reduce Their Speed Limits? Evidence from são Paulo, Brazil.” Journal of Public Economics 184: 104155.\n\n\nAshenfelter, Orley, and Michael Greenstone. 2004. “Using Mandated Speed Limits to Measure the Value of a Statistical Life.” Journal of Political Economy 112 (S1): S226–67.\n\n\nBauernschuster, Stefan, and Ramona Rekers. 2022. “Speed Limit Enforcement and Road Safety.” Journal of Public Economics 210: 104663.\n\n\nBorusyak, Kirill, Xavier Jaravel, and Jann Spiess. 2021. “Revisiting Event Study Designs, with an Application to the Estimation of the Marginal Propensity to Consume.” {Working Paper}. SSRN. https://doi.org/http://dx.doi.org/10.2139/ssrn.2826228.\n\n\nCampos, Valdir Ribeiro, Rebeca de Souza e Silva, Sérgio Duailibi, José Florentino dos Santos, Ronaldo Laranjeira, and Ilana Pinsky. 2013. “The Effect of the New Traffic Law on Drinking and Driving in são Paulo, Brazil.” Accident Analysis & Prevention 50: 622–27.\n\n\nGoodman-Bacon, Andrew. 2021. “Difference-in-Differences with Variation in Treatment Timing.” Journal of Econometrics 225 (2): 254–77. https://doi.org/10.1016/j.jeconom.2021.03.014.\n\n\nOrganization, World Health. 2023. Global Status Report on Road Safety 2023: Summary. World Health Organization.\n\n\nSun, Liyang, and Sarah Abraham. 2021. “Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous Treatment Effects.” Journal of Econometrics 225 (2): 175–99.\n\n\nVecino-Ortiz, Andres I, Madhuram Nagarajan, Sarah Elaraby, Deivis Nicolas Guzman-Tordecilla, Nino Paichadze, and Adnan A Hyder. 2022. “Saving Lives Through Road Safety Risk Factor Interventions: Global and National Estimates.” The Lancet 400 (10347): 237–50.\n\n\nWijnen, Wim, and Henk Stipdonk. 2016. “Social Costs of Road Crashes: An International Analysis.” Accident Analysis & Prevention 94: 97–106."
+  }
+]
